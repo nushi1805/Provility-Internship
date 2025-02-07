@@ -83,6 +83,10 @@ while i < len(List):
 
 #List Comprehension - Shorter Syntax
 #SYNTAX FOR LIST COMPREHENSION ---  newlist = [expression 'for' item 'in' iterable 'if' condition == 'True'
+#expression: What you want to do with each item.
+#item: The current element from the iterable.
+#iterable: Any iterable (like a list, range, string, etc.).
+#+if condition (optional): Filters which items to include.
 [print (x) for x in List]
 print("...................................................................................................")
 
@@ -120,5 +124,31 @@ numlist.reverse()
 print(numlist)
 List.reverse()
 print(List)
+
+#Copying the list - Can be done with copy() , list() and slice operator
+#Copy()
+Copylist = List.copy()
+print(Copylist)
+#list()
+Copylist1 = list(List)
+print(Copylist1)
+#Using slice operator
+Copylist2 = List[::]
+print(Copylist2)
+
+#Joining two list-
+#1. using '+' operator
+alphabets1 = ['a','b','c','d','e','f','g','h']
+alphabets2 = ['i','j','k','l','m','n','o','p']
+alphabets = list(alphabets1 + alphabets2)
+print(alphabets)
+#2. append() -append method returns none .It just manipulates the given list . Prints the entire list as one element
+alphabets1.append(alphabets2)
+print(alphabets1)
+#3. extend() - returns none, adds elements individually to the list
+alphabets1.extend(alphabets2)
+print (alphabets1)
+
+
 
 
